@@ -10,7 +10,7 @@ import java.util.List;
 public class Collections {
 
     static public void testCollections(StringBuffer out){
-        List<Double> list = new ArrayList<>(Arrays.asList(new Double[]{1.0,0.6,-1.0,10.0,-50.0, 0.0}));
+        List<Integer> list = new ArrayList<>(Arrays.asList(new Integer[]{1,6,-1,10,-50, 0}));
         out.append("Начальный массив: ")
                 .append(list)
                 .append("\nСумма положительных элементов: ")
@@ -26,9 +26,9 @@ public class Collections {
                 out.append(list);
     }
 
-    static public double sumOfPositiveElements(List<Double> list){
-        double out = 0;
-        for(Double d : list){
+    static public double sumOfPositiveElements(List<Integer> list){
+        int out = 0;
+        for(Integer d : list){
             if (d>0.0){
                 out+=d;
             }
@@ -36,30 +36,30 @@ public class Collections {
         return out;
     }
 
-    static public int first0Element(List<Double> list){
+    static public int first0Element(List<Integer> list){
         for(int i = 0; i< list.size(); i++){
-            if (list.get(i).equals(0.0)){
+            if (list.get(i).equals(0)){
                 return i;
             }
         }
         return -1;
     }
 
-    static public List<Double> listOfPositiveElements(List<Double> list){
-        List<Double> out = new ArrayList<>();
-        for(Double d : list){
-            if (d>0.0){
+    static public List<Integer> listOfPositiveElements(List<Integer> list){
+        List<Integer> out = new ArrayList<>();
+        for(Integer d : list){
+            if (d>0){
                 out.add(d);
             }
         }
         return out;
     }
 
-    static public double sumOfMinAndMax(List<Double> list){
+    static public double sumOfMinAndMax(List<Integer> list){
         return java.util.Collections.min(list) + java.util.Collections.max(list);
     }
 
-    static public void reverse(List<Double> list){
+    static public void reverse(List<Integer> list){
         java.util.Collections.reverse(list);
     }
 
