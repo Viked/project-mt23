@@ -7,6 +7,7 @@ import android.widget.TextView;
 import com.example.project_mt23.topic_1_06.arrays.Arrays;
 import com.example.project_mt23.topic_1_06.equation.Equation;
 import com.example.project_mt23.topic_1_06.hierarchy.Hierarchy;
+import com.example.project_mt23.topic_1_07.generics.Generics;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         Hierarchy.getText(out);
         Arrays.testArrays(out);
         Equation.testEquation(out);
+        Generics.testGenerics(out);
         textView.setText(out);
     }
 }

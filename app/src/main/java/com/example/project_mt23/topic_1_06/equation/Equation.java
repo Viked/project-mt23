@@ -16,14 +16,11 @@ public class Equation {
             }
         };
 
-        out.append("Минимум функции:")
-                .append("\n")
-                .append("Интерфейс: ")
+        out.append("Минимум функции:\nИнтерфейс: ")
                 .append(solve(minX, maxX,step,func))
-                .append("\n")
-                .append("Абстрактный класс: ")
+                .append("\nАбстрактный класс: ")
                 .append(new EquationImpl().solve(minX,maxX,step))
-                .append("\n");
+                .append("\n\n");
 
     }
 
