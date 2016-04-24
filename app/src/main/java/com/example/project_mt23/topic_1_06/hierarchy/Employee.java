@@ -11,8 +11,8 @@ public class Employee extends Citizen {
 
     private String companyName;
 
-    public Employee(int age, String name, String country, int salary, String companyName) {
-        super(age, name, country);
+    public Employee(int yearOfBirth, String name, String surname, String country, int salary, String companyName) {
+        super(yearOfBirth, name, surname, country);
         this.salary = salary;
         this.companyName = companyName;
     }

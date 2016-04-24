@@ -10,6 +10,7 @@ import com.example.project_mt23.topic_1_06.hierarchy.Hierarchy;
 import com.example.project_mt23.topic_1_07.collections.Collections;
 import com.example.project_mt23.topic_1_07.compare.Compare;
 import com.example.project_mt23.topic_1_07.generics.Generics;
+import com.example.project_mt23.topic_1_07.hierarchy.ClassHierarchy;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         Compare.testComparable(out);
         Compare.testComparator(out);
         Collections.testArrayList(out);
+        ClassHierarchy.testClassHierarchy(out);
         textView.setText(out);
     }
 }

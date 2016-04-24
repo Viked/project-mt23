@@ -5,21 +5,24 @@ package com.example.project_mt23.topic_1_06.hierarchy;
  */
 public class Human {
 
-    private int age;
+    private int yearOfBirth;
 
     private String name;
 
-    public Human(int age, String name) {
-        this.age = age;
+    private String surname;
+
+    public Human(int yearOfBirth, String name, String surname) {
+        this.yearOfBirth = yearOfBirth;
         this.name = name;
+        this.surname = surname;
     }
 
-    public int getAge() {
-        return age;
+    public int getYearOfBirth() {
+        return yearOfBirth;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setYearOfBirth(int yearOfBirth) {
+        this.yearOfBirth = yearOfBirth;
     }
 
     public String getName() {
@@ -30,8 +33,18 @@ public class Human {
         this.name = name;
     }
 
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
     @Override
     public String toString() {
-        return name + ": " + age;
+        return yearOfBirth +
+                ", name = " + name +
+                ", surname = " + surname;
     }
 }

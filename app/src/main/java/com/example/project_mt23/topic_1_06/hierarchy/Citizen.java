@@ -7,8 +7,8 @@ public class Citizen extends Human {
 
     private String country;
 
-    public Citizen(int age, String name, String country) {
-        super(age, name);
+    public Citizen(int yearOfBirth, String name, String surname, String country) {
+        super(yearOfBirth, name, surname);
         this.country = country;
     }
 
