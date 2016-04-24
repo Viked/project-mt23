@@ -9,6 +9,10 @@ import java.util.List;
  */
 public class Collections {
 
+    static public void testArrayList(StringBuffer out){
+        new ArrayListOfPoints().test(out);
+    }
+
     static public void testCollections(StringBuffer out){
         List<Integer> list = new ArrayList<>(Arrays.asList(new Integer[]{1,6,-1,10,-50, 0}));
         out.append("Начальный массив: ")

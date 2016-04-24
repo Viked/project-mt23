@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         Collections.testCollections(out);
         Compare.testComparable(out);
         Compare.testComparator(out);
+        Collections.testArrayList(out);
         textView.setText(out);
     }
 }
