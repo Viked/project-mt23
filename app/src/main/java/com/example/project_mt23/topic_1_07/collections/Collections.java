@@ -23,7 +23,7 @@ public class Collections {
                 .append(sumOfMinAndMax(list))
                 .append("\nОбратный порядо: ");
         reverse(list);
-                out.append(list);
+                out.append(list).append("\n");
     }
 
     static public double sumOfPositiveElements(List<Integer> list){
@@ -62,8 +62,5 @@ public class Collections {
     static public void reverse(List<Integer> list){
         java.util.Collections.reverse(list);
     }
-
-
-
 
 }
