@@ -12,6 +12,7 @@ import com.example.project_mt23.topic_1_07.compare.Compare;
 import com.example.project_mt23.topic_1_07.generics.Generics;
 import com.example.project_mt23.topic_1_07.hierarchy.ClassHierarchy;
 import com.example.project_mt23.topic_1_08.enums.Enums;
+import com.example.project_mt23.topic_1_08.exception.Exceptions;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         Collections.testArrayList(out);
         ClassHierarchy.testClassHierarchy(out);
         Enums.testEnums(out);
+        Exceptions.testExceptions(out);
         textView.setText(out);
     }
 }
